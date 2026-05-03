@@ -98,4 +98,5 @@ Each agent's task is done when:
 
 
 
-When your work is done, after you implement all code changes, use running your application skill to show your changes.
+When your work is done, after you implement all code changes, use running your application skill to show your changes. 
+When you open PR, open as active, not draft.
