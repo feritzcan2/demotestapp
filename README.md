@@ -4,6 +4,8 @@ Vite + React + TypeScript demo with 4 mini-tools rendered side-by-side on a
 single page. Used to demo 4 termloop agents working in parallel — each agent
 owns one widget file, no shared state, no merge conflicts.
 
+Test marker: PR-to-dev merge flow verified on 2026-05-03.
+
 ## Run
 
 ```sh
