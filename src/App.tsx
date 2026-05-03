@@ -12,12 +12,34 @@ const TILES = [
 
 export function App() {
   return (
-    <div className="app-shell">
-      <header className="app-header">
-        <h1>demotestapp</h1>
-        <span className="crumb">4 mini tools, 4 agents, one page</span>
+    <div id="top" className="app-shell">
+      <header className="top-bar" aria-label="Application header">
+        <a className="brand" href="#top" aria-label="demotestapp home">
+          <span className="brand-mark" aria-hidden="true">
+            d
+          </span>
+          <span>
+            <span className="eyebrow">Agent playground</span>
+            <span className="brand-name">demotestapp</span>
+          </span>
+        </a>
+
+        <nav className="top-nav" aria-label="Workspace sections">
+          <a href="#tools" aria-current="page">Tools</a>
+          <a href="#status">Status</a>
+          <a href="#agents">Agents</a>
+        </nav>
+
+        <div className="top-actions" aria-label="Workspace summary">
+          <span className="status-pill" id="status">
+            <span className="status-dot" aria-hidden="true" />
+            Live workspace
+          </span>
+          <span className="tool-count" id="agents">4 mini tools</span>
+        </div>
       </header>
-      <div className="tile-grid">
+
+      <main id="tools" className="tile-grid">
         {TILES.map(({ title, Component }) => (
           <section key={title} className="tile">
             <header className="tile-header">{title}</header>
@@ -26,7 +48,7 @@ export function App() {
             </div>
           </section>
         ))}
-      </div>
+      </main>
     </div>
   );
 }

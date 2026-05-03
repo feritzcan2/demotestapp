@@ -4,6 +4,8 @@ Vite + React + TypeScript demo with 4 mini-tools rendered side-by-side on a
 single page. Used to demo 4 termloop agents working in parallel — each agent
 owns one widget file, no shared state, no merge conflicts.
 
+Test marker: PR-to-dev merge flow verified on 2026-05-03.
+
 ## Run
 
 ```sh
@@ -98,4 +100,5 @@ Each agent's task is done when:
 
 
 
-When your work is done, after you implement all code changes, use running your application skill to show your changes.
+When your work is done, after you implement all code changes, use running your application skill to show your changes. 
+When you open PR, open as active, not draft.
