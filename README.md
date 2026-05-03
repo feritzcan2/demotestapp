@@ -95,3 +95,7 @@ Each agent's task is done when:
 1. `npm run build` passes (no TS errors).
 2. The widget renders correctly in `npm run dev` inside its tile.
 3. A PR is opened against `main`.
+
+
+
+When your work is done, after you implement all code changes, use running your application skill to show your changes.
